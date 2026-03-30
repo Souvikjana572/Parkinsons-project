@@ -1,5 +1,3 @@
-Here’s a **clean, professional GitHub README.md** tailored for your project 👇
-
 ---
 
 # 🧠 AI-Based Parkinson’s Disease Detection using Voice Signals
