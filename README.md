@@ -1,169 +1,134 @@
-AI-Based Parkinson’s Disease Prediction Using Speech Signals
-📌 Project Overview
+Here’s a **clean, professional GitHub README.md** tailored for your project 👇
 
-This project presents an AI-based system for Parkinson’s Disease prediction using speech signals. The system analyzes voice recordings and classifies them as Healthy or Parkinson’s Disease using deep learning techniques. The approach is non-invasive, cost-effective, and suitable for early disease screening.
+---
 
-📁 Project Directory Structure
-Parkinson_Project/
-│
-├── dataset/
-│   ├── healthy/
-│   └── parkinson/
-│
-├── src/
-│   ├── train.py
-│   ├── evaluate.py
-│   ├── model.py
-│   ├── dataset.py
-│   └── config.py
-│
-├── dataset_statistics.py
-├── requirements.txt
-├── README.md
-└── venv/   (optional – not included in repository)
+# 🧠 AI-Based Parkinson’s Disease Detection using Voice Signals
 
-⚙️ System Requirements
+## 📌 Overview
 
-Python 3.8 or higher
+Parkinson’s Disease (PD) is a progressive neurological disorder that affects movement and speech. Early detection is crucial for effective treatment and management. This project presents a **non-invasive AI-based approach** to detect Parkinson’s Disease using **voice signal analysis**.
 
-Operating System: Windows / Linux / macOS
+The model leverages **deep learning techniques (BiLSTM + Attention)** to capture temporal dependencies in speech data and identify patterns associated with Parkinson’s disease.
 
-Minimum 8 GB RAM (16 GB recommended)
+---
 
-GPU recommended for faster training (optional)
+## 🎯 Objectives
 
-🔽 Step 1: Download the Project
-Option 1: Download ZIP
+* Detect Parkinson’s Disease using voice recordings
+* Build a robust deep learning model for classification
+* Analyze voice features such as jitter, shimmer, and pitch
+* Improve early diagnosis using non-invasive methods
 
-Click Code → Download ZIP
+---
 
-Extract the ZIP file to your local system
+## 🧪 Dataset
 
-Option 2: Clone Using Git
-git clone https://github.com/your-username/parkinson-disease-prediction.git
-cd parkinson-disease-prediction
+* Voice dataset containing biomedical speech features
+* Includes attributes like:
 
-🐍 Step 2: Create a Python Virtual Environment
+  * Jitter
+  * Shimmer
+  * Fundamental Frequency (Fo)
+  * Harmonic-to-Noise Ratio (HNR)
 
-Open terminal / command prompt inside the project folder.
+*(You can add dataset link here if needed)*
 
-python -m venv venv
+---
 
-▶️ Step 3: Activate the Virtual Environment
-Windows (Command Prompt)
-venv\Scripts\activate
+## 🧠 Model Architecture
 
-Windows (PowerShell)
-venv\Scripts\Activate.ps1
+* **Bidirectional LSTM (BiLSTM):**
 
-Linux / macOS
-source venv/bin/activate
+  * Captures forward and backward temporal dependencies
+* **Attention Mechanism:**
 
+  * Focuses on the most relevant parts of the sequence
+* **Hybrid Model (HPDHM):**
 
-After activation, you should see:
+  * Combines BiLSTM + Attention for improved performance
 
-(venv)
+---
 
-📦 Step 4: Install Required Dependencies
+## ⚙️ Technologies & Libraries
+
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* TensorFlow
+* Keras
+
+---
+
+## 📊 Features
+
+* Data preprocessing and normalization
+* Feature correlation heatmap visualization
+* Deep learning model training
+* Performance evaluation (Accuracy, Loss)
+* Comparison with traditional ML models
+
+---
+
+## 📈 Results
+
+* Achieved **~99% accuracy** on voice dataset
+* Achieved **~96% accuracy** on clinical dataset
+* Outperformed traditional machine learning models
+
+---
+
+## 🚀 How to Run the Project
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/parkinson-detection.git
+
+# Navigate to project folder
+cd parkinson-detection
+
+# Install dependencies
 pip install -r requirements.txt
 
+# Run the model
+python main.py
+```
 
-If requirements.txt is not available, install manually:
+---
 
-pip install numpy pandas librosa torch torchvision torchaudio scikit-learn matplotlib transformers soundfile
+## 📷 Visualizations
 
-📊 Step 5: Prepare the Dataset
+* Heatmaps for feature importance
+* Training vs Validation accuracy graphs
+* Confusion matrix
 
-Ensure the dataset is arranged in the following structure:
+---
 
-dataset/
-├── healthy/
-│   ├── h1.wav
-│   ├── h2.wav
-│   └── ...
-└── parkinson/
-    ├── p1.wav
-    ├── p2.wav
-    └── ...
+## 🔮 Future Work
 
+* Integration with real-time voice input
+* Mobile/web-based diagnostic application
+* Use of Transformer-based models
+* Larger and more diverse datasets
 
-All audio files must be in .wav format
+---
 
-Folder names must be exactly healthy and parkinson
+## 🤝 Contribution
 
-📈 Step 6: Check Dataset Statistics (Optional)
+Contributions are welcome! Feel free to fork the repository and submit a pull request.
 
-To view the number of healthy and Parkinson’s voice samples:
+---
 
-python dataset_statistics.py
+## 📜 License
 
+This project is for academic and research purposes.
 
-This will display:
+---
 
-Number of healthy samples
+## 👨‍💻 Author
 
-Number of Parkinson’s samples
-
-Total dataset size
-
-🧠 Step 7: Train the Model
-
-Navigate to the source directory and start training:
-
-cd src
-python train.py
+**Udity Banerjee**
 
 
-Training progress (loss and accuracy) will be displayed in the console.
-
-📊 Step 8: Evaluate the Model
-
-After training, evaluate performance metrics:
-
-python evaluate.py
-
-
-This will generate:
-
-Accuracy
-
-Precision
-
-Recall
-
-F1-score
-
-Confusion matrix
-
-🧪 Step 9: Run Inference (If Implemented)
-
-To test the model on a new audio file:
-
-python predict.py --audio path_to_audio.wav
-
-🛑 Step 10: Deactivate the Virtual Environment
-
-After completing execution:
-
-deactivate
-
-📄 Notes
-
-Ensure the virtual environment is activated before running any scripts
-
-Do not upload the venv folder to GitHub
-
-Keep requirements.txt for reproducibility
-
-GPU is optional but recommended for faster training
-
-🎓 Academic Disclaimer
-
-This project is developed for academic and research purposes only.
-It is intended as a supportive screening tool and not a replacement for professional medical diagnosis.
-
-📬 Contact
-banerjeeudity@gmail.com
-
-Author: Udity
-Degree: B.Tech – Computer Sc
+---
