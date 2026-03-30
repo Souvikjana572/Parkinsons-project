@@ -5,7 +5,7 @@ import pandas as pd
 # Settings (edit these)
 # ==============================
 CSV_PATH = "model_comparison_results.csv"
-OUR_METHOD_NAME = "Our Method (BiLSTM+Attention)"
+OUR_METHOD_NAME = "HPDHM"
 
 # Put your final trained model scores here:
 OUR_METHOD_RESULTS = [

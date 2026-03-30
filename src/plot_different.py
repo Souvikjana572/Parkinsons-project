@@ -18,7 +18,7 @@ def plot_for_dataset(dataset_name: str, file_prefix: str):
     df_d = df[df["Dataset"] == dataset_name].copy()
 
     if df_d.empty:
-        raise ValueError(f"❌ Dataset '{dataset_name}' not found in CSV. Check spelling in CSV.")
+        raise ValueError(f"Dataset '{dataset_name}' not found in CSV. Check spelling in CSV.")
 
     # Sort models by accuracy (best first) for THIS dataset only
     model_order = df_d.sort_values("Accuracy", ascending=False)["Model"].tolist()
